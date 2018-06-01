@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "Please install pigz (sudo apt-get install pigz)"
 #if user input i.e. "bash run.sh 8 6"
 #n1=$1
 #n2=$2
