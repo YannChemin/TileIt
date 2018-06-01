@@ -5,6 +5,6 @@ n=4
 for file in *.tif
 do
 	mkdir -p sub_$n\_$n
-	bash ../sequential/tileimg.sh LC082150672017010301T1-SC20180219142350_stack_GCS.tif $n $n
+	bash ../sequential/tileimg.sh $file $n $n
 done
 
