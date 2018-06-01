@@ -4,13 +4,13 @@ mkdir -p $dest
 
 nX=$(gdalinfo $1 | grep "Size is" | sed "s/Size is \(.*\), \(.*\)/\1/") 
 nY=$(gdalinfo $1 | grep "Size is" | sed "s/Size is \(.*\), \(.*\)/\2/") 
-echo "nX="$nX "nY="$nY
+#echo "nX="$nX "nY="$nY
 
 total=$(echo $2"*"$3 | bc)
-echo "cut in "$2" x "$3"="$total
+#echo "cut in "$2" x "$3"="$total
 
-echo "New X size is" $(echo $nX "* 1.0 /" $2 | bc) 
-echo "New Y size is" $(echo $nY "* 1.0 /" $3 | bc) 
+#echo "New X size is" $(echo $nX "* 1.0 /" $2 | bc) 
+#echo "New Y size is" $(echo $nY "* 1.0 /" $3 | bc) 
 
 #Extension for the output files
 count=0
